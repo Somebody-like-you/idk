@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMitra - Chat</title>
+    <link rel="stylesheet" href="{% static 'chat.css' %}">  
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="chat-page">
+
+    <section class="chat-section">
+        <div class="chat-header">
+            <a href="/home"><h3 id="chat-header-text">MindMitra</h3></a>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <p class="bot-message">Hello! How can I help you today? 😊</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button id="sendMessage">➤</button>
+            <button id="voiceInput">🎤</button>
+        </div>
+    </section>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMitra - AI Mental Health Chatbot</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>MindMitra</h1>
+            <h2>Your AI-Powered Mental Health Companion</h2>
+            <p id="sub-header">Talk to our chatbot and get support anytime, anywhere.</p>
+            <p id="para">Welcome to MindMitra, your trusted AI companion for mental health and emotional well-being.
+                <br>
+                Whether you're feeling stressed, anxious, overwhelmed, or just need someone to talk to,
+                <br>
+                we’re here to listen and support you — judgment-free and fully confidential.</p>
+             <a href="chat"><button id="startchat">Start the Chat</button></a>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
